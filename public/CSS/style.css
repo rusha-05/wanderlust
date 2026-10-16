@@ -1,0 +1,235 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important ;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+}
+
+/* Navbar */
+.navbar {
+  min-height: 5rem;
+  background-color: white;
+}
+
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: #222222 !important; /*we set it as important to override our custom styling over bootstraps styling */
+}
+
+/* Footer */
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-info-socials i {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+.f-info {
+  text-align: center;
+  height: 8rem;
+  background-color: #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+}
+
+/* Cards */
+
+.card {
+  /* border: none !important; */
+  margin-bottom: 2rem;
+}
+
+/* 
+.listing-card {
+    border: none !important ;
+    margin-bottom: 2rem;
+} */
+
+.listing-link {
+  text-decoration: none !important;
+  color: #222222 !important;
+}
+
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  height: 20rem !important;
+  object-fit: cover !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.card-text p {
+  font-weight: 400 !important ;
+}
+
+.listing-link {
+  text-decoration: none !important;
+}
+
+/* Card Effect */
+.card-img-overlay {
+  opacity: 0;
+}
+
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+
+/* New Page */
+.add-btn {
+  border: none !important;
+  background-color: #fe424d !important;
+}
+
+/* Edit Page */
+.edit-btn {
+  border: none !important;
+  background-color: #fe424d !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Show Page */
+.show-img {
+  height: 30vh;
+}
+
+.btns {
+  display: flex;
+}
+
+.show-card {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#map {
+  height: 400px;
+  width: 80vh;
+}
+
+/* Marker */
+/* .custom-marker {
+  font-size: 35px;
+  color: red;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.custom-marker:hover {
+  transform: scale(1.4);
+  /* filter: drop-shadow(0 0 8px orange); */
+/* } */ 
+
+/* .custom-marker {
+  position: relative;
+  width: 35px;
+  height: 40px;
+  font-size: 35px;
+  color: red;
+  cursor: pointer;
+}
+
+.custom-marker i {
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.icon-default {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.icon-hover {
+  opacity: 0;
+  transform: scale(0.7);
+}
+
+.custom-marker:hover .icon-default {
+  opacity: 0;
+  transform: scale(0.7);
+}
+
+.custom-marker:hover .icon-hover {
+  opacity: 1;
+  transform: scale(1.15);
+} */
+
+.custom-marker {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid red;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.custom-marker i {
+  position: absolute;
+  font-size: 22px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.icon-default {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.icon-hover {
+  opacity: 0;
+  transform: scale(0.7);
+}
+
+.custom-marker:hover {
+  background-color: #ffe5e5;
+  border-color: darkred;
+}
+
+.custom-marker:hover .icon-default {
+  opacity: 0;
+  transform: scale(0.7);
+}
+
+.custom-marker:hover .icon-hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
